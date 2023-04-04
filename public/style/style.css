@@ -1,0 +1,167 @@
+.presentation{
+    background-color: black;
+    padding-top: 60px;
+    color: whitesmoke;
+    letter-spacing: 1px;
+    padding-bottom: 50px;
+}
+
+
+
+
+.prestationsAccueil{
+    background-color: var(--lightblack);
+}
+.titleAndBgPrestationsAccueil>h2{
+    color: whitesmoke;
+    padding-top: 70px;
+}
+.linksPrestations{
+    display: flex;
+    justify-content: space-evenly;
+}
+.prestationsFemmes{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+}
+.prestationsHommes{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+}
+.ctaPrestations{
+    margin: 30px;
+    height: 70px;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.ctaPrestations:hover{
+    background-color: var(--marron );
+    color: whitesmoke;
+}
+
+@media (max-width: 500px){
+    .linksPrestations{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+.produitsAccueil{
+    background-color: var(--mastic);
+}
+.containerProduitsAccueil{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.partieDroiteProduitsAccueil{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.partieDroiteProduitsAccueil>h2{
+    color: black;
+    margin-bottom: 0;
+}
+.partieDroiteProduitsAccueil>p{
+    color: black;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    margin-bottom: 0;
+    width: 450px;
+}
+.ctaNosProduits{
+    padding: 25px;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+.ctaNosProduits:hover{
+    background-color: var(--marron);
+    color: whitesmoke;
+}
+
+@media (max-width: 500px){
+    .containerProduitsAccueil{
+        flex-direction: column-reverse;
+    }
+    .partieDroiteProduitsAccueil>p{
+        font-size: 1em;
+        width: auto;
+        margin-top: 40px;
+    }
+    .ctaNosProduits{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+.notreEquipe{
+    background-color: black;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.titleAndBgNotreEquipe>h2{
+    color: whitesmoke;
+    margin-bottom: 40px;
+}
+.membre{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.photo{
+    border-radius: 50%  ;
+    background-image: url("../img/membre.jpg");
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+.texteMembre{
+    color: whitesmoke;
+}
+
+@media (max-width: 500px){
+    .notreEquipe{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .membre{
+        flex-direction: column;
+    }
+    .photo{
+        width: 200px;
+        height: 200px;
+    }
+    .texteMembre{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .parcours{
+        text-align: center;
+    }
+}

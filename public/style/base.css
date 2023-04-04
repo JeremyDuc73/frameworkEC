@@ -1,0 +1,327 @@
+:root{
+    --mastic : #C8B6A6;
+    --marron : #8c5d42;
+    --lightblack : #262626
+}
+body{
+    background-color: var(--mastic);
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin: 0;
+}
+h1{
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 30px;
+    letter-spacing: 4px;
+}
+h2{
+    text-transform: uppercase;
+    font-size: 2.5em;
+    letter-spacing: 4px;
+}
+
+@media (max-width: 500px){
+    h1{
+        font-size: 1.8em;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+}
+
+
+
+
+.bandeInfosTop{
+    background-color: var(--mastic);
+}
+.containerBandeInfos{
+    display: flex;
+    justify-content: space-between;
+}
+.adresseBandeInfos{
+    display: flex;
+    align-items: center;
+}
+.adresseBandeInfos>a{
+    text-decoration: none;
+    color: black;
+    margin-left: 6px;
+}
+.adresseBandeInfos>a:hover{
+    color: whitesmoke;
+}
+.horairesBandeInfos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.horairesBandeInfos>p{
+    margin-bottom: 0;
+}
+.numeroBandeInfos{
+    display: flex;
+    align-items: center;
+}
+.numeroBandeInfos>a{
+    text-decoration: none;
+    padding: 8px;
+    color : black;
+}
+.numeroBandeInfos>a:hover{
+    color: whitesmoke;
+}
+.hrBandeInfos{
+    width: 3px;
+    height: 40px;
+    opacity: 1;
+    background-color: black;
+}
+
+@media (max-width: 500px){
+    .containerBandeInfos{
+        flex-direction: column;
+        align-items: center;
+    }
+    .hrBandeInfos{
+        width: 100px;
+        height: 2px;
+        margin: 3px;
+    }
+    .horairesBandeInfos{
+        align-items: center;
+        font-size: 0.7em;
+    }
+    .numeroBandeInfos>a{
+        padding: 0;
+        padding-left: 8px;
+    }
+}
+
+
+
+
+
+
+
+.logoNavbar{
+    width: 100px;
+    height: 100px;
+}
+.nav-link{
+    color: white;
+    margin-right: 20px;
+    text-transform: capitalize;
+    font-size: 1.4em;
+}
+.nav-link:hover{
+    color: var(--marron);
+}
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-collapse {
+        flex-direction: row-reverse;
+    }
+}
+.navbar{
+    background-color: var(--lightblack);
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler{
+    border: var(--bs-border-width) solid white;
+    color: whitesmoke;
+}
+
+@media(max-width: 500px){
+    .logoNavbar{
+        height: 50px;
+        width: 50px;
+    }
+}
+
+
+
+
+
+
+.firstPart{
+    background-image: url("../img/photoSalon.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90vh;
+    width: 100%;
+}
+.itemsFirstPart{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.phoneNumber{
+    color: var(--marron);
+    background-color: white;
+    text-decoration: none;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1.5em;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 1);
+}
+.phoneNumber:hover{
+    color: white;
+    background-color: black;
+}
+.appointement{
+    color: white;
+    background-color: var(--marron);
+    text-decoration: none;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-left: 40px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 1);
+}
+.appointement:hover{
+    color: white;
+    background-color: black;
+}
+.logo{
+    height: 180px;
+    width: 180px;
+    margin-bottom: 50px;
+}
+@media (max-width: 1000px){
+    .firstPart{
+        height: 50vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .logo{
+        height: 100px;
+        width: 100px;
+    }
+    .phoneNumber{
+        font-size: 1em;
+    }
+    .appointement{
+        font-size: 1em;
+    }
+}
+
+.footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--lightblack);
+}
+.containerFooter{
+    display: flex;
+    justify-content: space-between;
+}
+.leftPartFooter{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.leftPartFooter>h3{
+    margin-top: 0;
+    padding-left: 12px;
+}
+.leftPartFooter>a{
+    text-decoration: underline;
+    color:whitesmoke;
+}
+.leftPartFooter>a:hover{
+    color: var(--marron);
+}
+.separateurFooter{
+    border: white solid 2px;
+    opacity: 1;
+    width: 150px;
+    margin-left: 12px;
+}
+.mentionsLegales{
+    font-size: small;
+}
+.seConnecter{
+    font-size: xx-small;
+}
+
+
+.centerPartFooter{
+    color: white;
+}
+.jour{
+    display: flex;
+    justify-content: space-between;
+}
+.jour>p{
+    margin-left: 20px;
+}
+
+.rightPartFooter{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.linkFacebook{
+    color: whitesmoke;
+}
+.linkFacebook:hover{
+    color: var(--marron);
+}
+
+h5{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.numeroFooter{
+    color: white;
+}
+.numeroFooter:hover{
+    color: var(--marron);
+}
+.hrMobile{
+    display: none;
+}
+
+@media (max-width: 500px){
+    .containerFooter{
+        flex-direction: column;
+        align-items: center;
+    }
+    .leftPartFooter{
+        align-items: center;
+    }
+    .leftPartFooter>h3{
+        padding-left: 0;
+    }
+    .separateurFooter{
+        border: white solid 1px;
+        width: 60px;
+        margin: 4px;
+    }
+    .centerPartFooter{
+        margin-top: 20px;
+    }
+    .jour{
+        flex-direction: column;
+        align-items: center;
+    }
+    .jour>p{
+        font-size: 0.9em;
+        margin-left: 0;
+    }
+    .nomJour{
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+    .hrMobile{
+        display: inline;
+        border: white solid 2px;
+        opacity: 1;
+        width: 150px;
+    }
+}
