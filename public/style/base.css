@@ -148,6 +148,7 @@ h2{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    transition: background 0.5s linear;
     height: 90vh;
     width: 100%;
 }

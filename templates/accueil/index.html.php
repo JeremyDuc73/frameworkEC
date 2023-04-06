@@ -1,6 +1,6 @@
 <div class="presentation">
     <div class="container containerPresentation">
-        <h1 class="text-center">EMOTION COIFFURE</h1>
+        <h1 class="text-center h1Accueil">EMOTION COIFFURE</h1>
         <p class="text-center">Notre équipe vous accueille dans une ambiance agréable, chaleureuse et professionnelle. Dès votre arrivée, vous vous sentirez comme chez vous. Vous aurez envie de vous faire chouchouter dans notre espace coiffure au sein de notre espace bien-être.</p>
     </div>
 </div>

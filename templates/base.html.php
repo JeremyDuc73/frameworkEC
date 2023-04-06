@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <title><?= $pageTitle ?></title>
 </head>
 <body>
@@ -28,8 +29,8 @@
         </div>
         <hr class="hrBandeInfos">
         <div class="horairesBandeInfos">
-            <p>lundi, vendredi et samedi de 8h30 à 19h</p>
-            <p>mardi, mercredi et jeudi de 8h30 à 12h30 puis de 13h30 à 19h</p>
+            <p>lundi au samedi de 8h30 à 19h non-stop</p>
+            <p>parking gratuit et salon climatisé</p>
         </div>
         <hr class="hrBandeInfos">
         <div class="numeroBandeInfos">
@@ -113,5 +114,6 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="../public/js/base.js"></script>
 </body>
 </html>
