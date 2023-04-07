@@ -7,7 +7,7 @@
         </div>
         <div class="textePartenaire">
             <h3 class="text-center mb-3"><?=$partenaire->getNom()?></h3>
-            <p class="pPartenaire"><?=$partenaire->getDescription()?></p>
+            <p class="pPartenaire text-center"><?=$partenaire->getDescription()?></p>
             <a class="btn btn-light ctaPartenaire" target="_blank" href="<?=$partenaire->getLien()?>">SITE PARTENAIRE</a>
         </div>
     </div>

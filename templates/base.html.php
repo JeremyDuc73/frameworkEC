@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style/mentionsLegales.css">
     <link rel="stylesheet" href="style/partenaires.css">
     <link rel="stylesheet" href="style/contact.css">
+    <link rel="stylesheet" href="style/produits.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
@@ -53,7 +54,7 @@
                     <a class="nav-link" href="prestations.html">prestations</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="produits.html">produits</a>
+                    <a class="nav-link" href="?type=advanced&action=categoriesProduits">produits</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="?type=advanced&action=partenaires">partenaires</a>

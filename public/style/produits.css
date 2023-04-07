@@ -1,0 +1,27 @@
+.categorieProduits{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.categorieProduits>hr{
+    width: 400px;
+    border: 2px solid black;
+    opacity: 1;
+}
+.containerProduits{
+    display: flex;
+    justify-content: center;
+}
+.produits{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.produits>p{
+    width: 300px;
+    text-align: center;
+}
+
+.imageProduit{
+    width: 300px;
+}
