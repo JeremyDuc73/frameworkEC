@@ -34,9 +34,7 @@ class AdvancedController extends AbstractController
 
     public function categoriesProduits(){
         $categoriesProduits = $this->getRepository(entityName: CategorieProduit::class)->findAll();
-        $id = $this->getRepository(entityName: CategorieProduit::class)->getId();
-        $cat = $this->getRepository(entityName: CategorieProduit::class)->findById($id);
-        $produits = $this->getRepository(entityName: Produit::class)->findAllByCategorieProduit($cat);
+        $produits = $this->getRepository(entityName: Produit::class)->findAll();
         return $this->render("produits/index", [
            "pageTitle"=>"Nos produits",
            "categories"=>$categoriesProduits,

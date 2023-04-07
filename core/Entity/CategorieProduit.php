@@ -36,4 +36,8 @@ class CategorieProduit extends AbstractEntity
     {
         $this->titre = $titre;
     }
+    public function getProduits(){
+        $produitsRepo = new CategoriesProduitsRepository();
+        return $produitsRepo->findById($this->id);
+    }
 }
