@@ -10,3 +10,12 @@ function changeBackgroundImage() {
 }
 
 window.setInterval(changeBackgroundImage, 5000);
+
+
+    window.scrollTo({
+        behavior: 'smooth',
+        top:
+            document.querySelector(".scroll").getBoundingClientRect().top -
+            document.body.getBoundingClientRect().top -
+            600,
+    })

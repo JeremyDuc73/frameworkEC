@@ -1,4 +1,4 @@
-<h1 class="text-center mt-4">MENTIONS LÉGALES</h1>
+<h1 class="text-center mt-4 scroll">MENTIONS LÉGALES</h1>
 <div class="container partie">
     <h2>DÉFINITIONS</h2>
     <p>Client : tout professionnel ou personne physique capable au sens des articles 1123 et suivants du Code civil, ou personne morale, qui visite le Site objet des présentes conditions générales.</p>

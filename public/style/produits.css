@@ -7,11 +7,22 @@
     width: 400px;
     border: 2px solid black;
     opacity: 1;
+    margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+    .categorieProduits>hr{
+        width: 200px;
+    }
+}
+.h2CategorieProduits{
+    margin-top: 50px;
+
 }
 .containerProduits{
     display: flex;
     justify-content: center;
 }
+
 .produits{
     display: flex;
     flex-direction: column;

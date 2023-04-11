@@ -66,7 +66,7 @@
         </div>
     </div>
 </nav>
-<div class="firstPart">
+<div id="about" class="firstPart">
     <div class="itemsFirstPart">
         <img src="img/logo.jpg" alt="logo emotion coiffure" class="logo">
         <div class="linksFirstPart">
@@ -80,9 +80,9 @@
     <div class="container containerFooter">
         <div class="leftPartFooter">
             <h3 class="text-white">NAVIGATION</h3>
-            <a class="btn" href="index.html">Plan du site</a>
+            <a class="btn" href="?type=advanced&action=accueil">Plan du site</a>
             <hr class="separateurFooter">
-            <a class="btn mentionsLegales" href="?type=simple&action=mentionsLegales">Mentions légales</a>
+            <a class="btn mentionsLegales" href="?type=static&action=mentionsLegales">Mentions légales</a>
             <a class="btn seConnecter" href="#">Se connecter</a>
         </div>
         <hr class="hrMobile">

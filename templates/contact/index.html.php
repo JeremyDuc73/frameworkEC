@@ -1,4 +1,4 @@
-<div class="contactFormAndText">
+<div class="contactFormAndText scroll">
     <div class="textForm">
         <h1>NOUS CONTACTER</h1>
         <p class="text-center">Veuillez remplir ce formulaire afin de prendre contact avec nous, vous pouvez toujours vous rendre sur notre page Facebook ou venir nous voir directement !</p>

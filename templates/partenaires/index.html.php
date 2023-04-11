@@ -1,4 +1,4 @@
-<h1 class="text-center mt-4">NOS PARTENAIRES</h1>
+<h1 class="text-center mt-4 scroll">NOS PARTENAIRES</h1>
 <?php foreach ($partenaires as $partenaire) : ?>
 
     <div class="partenaire container">
