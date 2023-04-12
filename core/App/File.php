@@ -2,6 +2,8 @@
 
 namespace App;
 
+use Entity\Membre;
+
 class File
 {
 
@@ -18,7 +20,7 @@ class File
 
     public function __construct($index)
     {
-        $this->uploadDirectory = dirname(__DIR__,2)."/images/";
+        $this->uploadDirectory = dirname(__DIR__,2)."/public/img/";
 
         $this->fileData = $_FILES[$index];
 
@@ -52,6 +54,10 @@ class File
     public function isImage(){
 
         return in_array($this->mimeType, $this->acceptedMimeTypes);
+    }
+
+    public function deleteFile(string $file){
+        return unlink($this->uploadDirectory.$file);
     }
 
 

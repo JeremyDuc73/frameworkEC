@@ -1,7 +1,7 @@
 <div class="presentation">
     <div class="container containerPresentation">
         <h1 class="text-center h1Accueil">EMOTION COIFFURE</h1>
-        <p class="text-center">Notre équipe vous accueille dans une ambiance agréable, chaleureuse et professionnelle. Dès votre arrivée, vous vous sentirez comme chez vous. Vous aurez envie de vous faire chouchouter dans notre espace coiffure au sein de notre espace bien-être.</p>
+        <p class="text-center">Des mains expertes pour mettre en valeur votre beauté! Venez découvrir votre salon Emotion Coiffure, vous serez accueilli dans une ambiance chaleureuse et conviviale. Notre ambition vous écoutez, vous conseillez, vous sublimez</p>
     </div>
 </div>
 <div class="prestationsAccueil">
@@ -29,7 +29,7 @@
         <div class="partieDroiteProduitsAccueil">
             <h2 class="text-center">nos produits</h2>
             <p class="text-center">Nous proposons au salon une large gamme de produits de nos partenaires, shampoings, coiffants, soins, ... Venez chez nous pour les découvrir !</p>
-            <a class="btn btn-light ctaNosProduits" href="">découvrir nos produits</a>
+            <a class="btn btn-light ctaNosProduits" href="?type=advanced&action=categoriesProduits">découvrir nos produits</a>
         </div>
     </div>
 </div>
@@ -39,14 +39,21 @@
         <div class="titleAndBgNotreEquipe">
             <h2 class="text-center">notre equipe</h2>
         </div>
+        <?php if (\App\Session::getUser()){ ?>
+            <a class="btn btn-success" href="?type=admin&action=createMembre">AJOUTER UN MEMBRE</a>
+        <?php } ?>
         <div class="equipe">
             <?php foreach ($membres as $membre) : ?>
                 <div class="membre">
-                    <div class="photo"></div>
+                    <div class="photo" style="background-image: url('img/<?= $membre->getPhoto() ?>')"></div>
                     <div class="texteMembre">
                         <h4 class="identite"><?=$membre->getIdentite()?></h4>
                         <p class="parcours"><?=$membre->getParcours()?></p>
                     </div>
+                    <?php if (\App\Session::getUser()){ ?>
+                        <a class="btn btn-danger" href="?type=admin&action=removeMembre&id=<?= $membre->getId() ?>&photo=<?= $membre->getPhoto() ?>">X</a>
+                        <a class="btn btn-warning" href="?type=admin&action=changeMembre&id=<?= $membre->getId() ?>">I</a>
+                    <?php } ?>
                 </div>
             <?php endforeach; ?>
         </div>

@@ -5,6 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/logo.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style/base.css">
     <link rel="stylesheet" href="style/style.css">
@@ -62,6 +63,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="?type=static&action=contact">contact</a>
                 </li>
+                <?php if (\App\Session::getUser()){ ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href="?type=admin&action=signOut">Se déconnecter</a>
+                    </li>
+                <?php } ?>
             </ul>
         </div>
     </div>
@@ -80,10 +86,10 @@
     <div class="container containerFooter">
         <div class="leftPartFooter">
             <h3 class="text-white">NAVIGATION</h3>
-            <a class="btn" href="?type=advanced&action=accueil">Plan du site</a>
+            <a class="btn" href="?type=admin&action=register">Plan du site</a>
             <hr class="separateurFooter">
             <a class="btn mentionsLegales" href="?type=static&action=mentionsLegales">Mentions légales</a>
-            <a class="btn seConnecter" href="#">Se connecter</a>
+            <a class="btn seConnecter" href="?type=admin&action=signIn">Se connecter</a>
         </div>
         <hr class="hrMobile">
         <div class="centerPartFooter">

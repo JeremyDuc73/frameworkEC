@@ -7,6 +7,8 @@ class Kernel
 
     public static function run(){
 
+        Session::start();
+
         $type = "advanced";
         $action = "accueil";
 
