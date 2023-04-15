@@ -13,6 +13,7 @@ class Produit extends AbstractEntity
     private int $id;
     private string $titre;
     private string $description;
+    private string $image;
     private int $cat_id;
 
     /**
@@ -69,5 +70,21 @@ class Produit extends AbstractEntity
     public function setCatId(int $cat_id): void
     {
         $this->cat_id = $cat_id;
+    }
+
+    /**
+     * @return string
+     */
+    public function getImage(): string
+    {
+        return $this->image;
+    }
+
+    /**
+     * @param string $image
+     */
+    public function setImage(string $image): void
+    {
+        $this->image = $image;
     }
 }

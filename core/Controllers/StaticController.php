@@ -15,4 +15,8 @@ class StaticController extends AbstractController
     public function contact(){
         return$this->render("contact/index", ["PageTitle"=>"Nous contacter"]);
     }
+
+    public function prestations(){
+        return $this->render("prestations/index", ["PageTitle"=>"Nos prestations"]);
+    }
 }

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="style/partenaires.css">
     <link rel="stylesheet" href="style/contact.css">
     <link rel="stylesheet" href="style/produits.css">
+    <link rel="stylesheet" href="style/prestations.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
@@ -52,7 +53,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="prestations.html">prestations</a>
+                    <a class="nav-link" href="?type=static&action=prestations">prestations</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="?type=advanced&action=categoriesProduits">produits</a>
@@ -72,15 +73,17 @@
         </div>
     </div>
 </nav>
-<div id="about" class="firstPart">
-    <div class="itemsFirstPart">
-        <img src="img/logo.jpg" alt="logo emotion coiffure" class="logo">
-        <div class="linksFirstPart">
-            <a href="tel:0479097966" class="phoneNumber">04.79.09.79.66</a>
-            <a target="_blank" href="https://onlinebooking.ikosoft.com/774A27F639997D91EC3100015/FRA/Services/ChooseGender" class="appointement">RDV en ligne</a>
+<?php if (!\App\Session::getUser()){ ?>
+    <div id="about" class="firstPart">
+        <div class="itemsFirstPart">
+            <img src="img/logo.jpg" alt="logo emotion coiffure" class="logo">
+            <div class="linksFirstPart">
+                <a href="tel:0479097966" class="phoneNumber">04.79.09.79.66</a>
+                <a target="_blank" href="https://onlinebooking.ikosoft.com/774A27F639997D91EC3100015/FRA/Services/ChooseGender" class="appointement">RDV en ligne</a>
+            </div>
         </div>
     </div>
-</div>
+<?php } ?>
 <?= $pageContent ?>
 <div class="footer">
     <div class="container containerFooter">

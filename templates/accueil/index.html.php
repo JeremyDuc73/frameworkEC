@@ -40,7 +40,7 @@
             <h2 class="text-center">notre equipe</h2>
         </div>
         <?php if (\App\Session::getUser()){ ?>
-            <a class="btn btn-success" href="?type=admin&action=createMembre">AJOUTER UN MEMBRE</a>
+            <a class="btn btn-success d-flex justify-content-center" href="?type=admin&action=createMembre">AJOUTER UN MEMBRE</a>
         <?php } ?>
         <div class="equipe">
             <?php foreach ($membres as $membre) : ?>
@@ -52,7 +52,7 @@
                     </div>
                     <?php if (\App\Session::getUser()){ ?>
                         <a class="btn btn-danger" href="?type=admin&action=removeMembre&id=<?= $membre->getId() ?>&photo=<?= $membre->getPhoto() ?>">X</a>
-                        <a class="btn btn-warning" href="?type=admin&action=changeMembre&id=<?= $membre->getId() ?>">I</a>
+                        <a class="btn btn-warning" href="?type=admin&action=changeMembre&id=<?= $membre->getId() ?>">MODIFIER</a>
                     <?php } ?>
                 </div>
             <?php endforeach; ?>

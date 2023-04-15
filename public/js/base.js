@@ -1,4 +1,4 @@
-const images = ["img/photoSalon.jpg","img/produits.jpg"];
+const images = ["img/photoSalon.jpg","img/photoSalon2.jpg"];
 const divChange = document.querySelector(".firstPart");
 
 
