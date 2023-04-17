@@ -17,13 +17,23 @@ class AdminController extends AbstractController
 {
     public function register(){
 
-        $request = $this->post("form",["username"=>"string","password"=>"string"]);
+        $username = null;
+        $password = null;
 
-        if($request){
+        if(!empty($_POST['username'])){
+            $username = htmlspecialchars($_POST['username']);
+
+        }
+        if(!empty($_POST['password'])){
+            $password = htmlspecialchars($_POST['password']);
+
+        }
+
+        if($username && $password){
 
             $user = new User();
-            $user->setUsername($request["username"]);
-            $user->setPassword($request["password"]);
+            $user->setUsername($username);
+            $user->setPassword($password);
 
             $this->repository->insert($user);
 
@@ -99,7 +109,6 @@ class AdminController extends AbstractController
             $photo = new File("photo");
 
             if($photo->isImage()){
-
                 $photo->upload();
             }
 

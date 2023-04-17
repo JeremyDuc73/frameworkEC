@@ -9,14 +9,14 @@ class StaticController extends AbstractController
 {
 
     public function mentionsLegales(){
-        return $this->render("mentionsLegales/index", ["PageTitle"=>"Mentions Légales"]);
+        return $this->render("mentionsLegales/index", ["pageTitle"=>"Mentions Légales"]);
     }
 
     public function contact(){
-        return$this->render("contact/index", ["PageTitle"=>"Nous contacter"]);
+        return$this->render("contact/index", ["pageTitle"=>"Nous contacter"]);
     }
 
     public function prestations(){
-        return $this->render("prestations/index", ["PageTitle"=>"Nos prestations"]);
+        return $this->render("prestations/index", ["pageTitle"=>"Nos prestations"]);
     }
 }

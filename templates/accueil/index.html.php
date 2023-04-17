@@ -12,11 +12,11 @@
         <div class="linksPrestations">
             <div class="prestationsFemmes">
                 <img class="img-fluid" src="img/femme.jpg" alt="photo d'une femme">
-                <a class="btn btn-light ctaPrestations" href="#">prestations femmes</a>
+                <a class="btn btn-light ctaPrestations" href="?type=static&action=prestations#femme">prestations femmes</a>
             </div>
             <div class="prestationsHommes">
                 <img class="img-fluid" src="img/homme.jpg" alt="photo d'un homme">
-                <a class="btn btn-light ctaPrestations" href="#">prestations hommes</a>
+                <a class="btn btn-light ctaPrestations" href="?type=static&action=prestations#homme">prestations hommes</a>
             </div>
         </div>
     </div>
